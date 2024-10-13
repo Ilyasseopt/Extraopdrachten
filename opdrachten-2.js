@@ -1,8 +1,9 @@
 function kleineletters(tekst) {
-  return tekst === tekst.toLowerCase();
+  if (tekst === tekst.toLowerCase()) return true;
+  else {
+    return false;
+  }
 }
 
-console.log(kleineletters("hallo wereld"));
-console.log(kleineletters("Hallo Wereld"));
-console.log(kleineletters("123abc"));
-console.log(kleineletters("ABC"));
+console.log(kleineletters("Hallo"));
+console.log(kleineletters("hallo"));
